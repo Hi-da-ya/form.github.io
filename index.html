@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width-scale=1.0">
+        <title>Registration form</title>
+    </head>
+    <body>
+        <form action="/action.php" method="post" autocomplete="on">
+            <h1>Registration form</h1>
+            <p>Personal details</p>
+            <label for="fname">Fullname</label><br>
+            <input type="text"  placeholder="Fullname" id="fname" name="" required><br><br>
+            <label for="email">email</label><br>
+            <input type="email" placeholder="email" id="email" email="" required><br><br>
+            <label for="pword">Password</label><br>
+            <input type="password" placeholder="password" id="pword" minlength="8" password=""><br><br>
+            <label for="role">Role</label>
+
+            <select id="role" name="role">
+             <option value="student">student</option>
+             <option value="support staff">support staff</option>
+             <option value="teacher">teacher</option>
+            </select>
+            <fieldset>
+                <legend>Referrer</legend>
+                <input type="radio" name="referrer">TV<br>
+                <input type="radio" name="Referrer">Internet<br>
+                <input type="radio" name="Referrer" checked>None<br>
+            </fieldset><br>
+            <input type="checkbox"> I accept terms of service<br>
+            <input type="submit" value="register" name="" required>
+            
+        </form>
+    </body>
+</html>
